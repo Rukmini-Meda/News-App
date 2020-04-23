@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Post> posts=List();
   bool isLoaded=false;
-  String url = "http://newsapi.org/v2/top-headlines?apiKey=7b6fa6e349754530b8b47f8126c97558&country=in";
+  String url = "http://newsapi.org/v2/top-headlines?apiKey=35ee3e4fa34a403487285ffb2579b2d1&country=in";
 
   Future<void> _fetchData() async{
     try{
