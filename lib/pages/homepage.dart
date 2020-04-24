@@ -60,6 +60,23 @@ class _HomePageState extends State<HomePage> {
         ):Center(child: CircularProgressIndicator(),),
         onRefresh: _fetchData,
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            title: Text("Home")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            title: Text("Likes")
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.bookmark),
+            title: Text("Saves")
+          ),
+          
+        ],
+      ),
     );
   }
 }
